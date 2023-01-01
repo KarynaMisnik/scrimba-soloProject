@@ -13,8 +13,8 @@ function StopGame() { //highlights a leader
     HomeResult.style.color = "#041014";
     GuestResult.style.color = "#25710e";
   }else{
-GuestResult.style.color = "#25710e";
-HomeResult.style.color = "#25710e";
+GuestResult.style.color = "#041014";
+HomeResult.style.color = "#041014";
   }
 }
 
