@@ -4,10 +4,14 @@
 }
 
 body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
-    background-image: url("/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+background-image: url("/bg.png");
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .container {
@@ -71,12 +75,30 @@ font-weight: 900;
 cursor: pointer;
 }
 
+
 .resetHome,
 .resetGuest{
 width: 100px;
 height: 50px;
 margin-top: 1em;  
 background: rgb(239, 65, 65);
+border-radius: 5px;
+
+font-family: 'Nova Square', cursive;
+font-weight: 900;
+color: #fff;
+
+cursor: pointer;
+}
+
+.stop{
+width: 150px;
+height: 100px;
+margin-top: 3em;
+
+background: #57cef5;
+
+border: 3px solid #fff;
 border-radius: 5px;
 
 font-family: 'Nova Square', cursive;
