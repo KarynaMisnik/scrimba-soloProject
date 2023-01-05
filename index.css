@@ -91,19 +91,6 @@ color: #fff;
 cursor: pointer;
 }
 
-.stop{
-width: 150px;
-height: 100px;
-margin-top: 3em;
-
-background: #57cef5;
-
-border: 3px solid #fff;
-border-radius: 5px;
-
-font-family: 'Nova Square', cursive;
-font-weight: 900;
-color: #fff;
-
-cursor: pointer;
+.highlight {
+    color: green;
 }

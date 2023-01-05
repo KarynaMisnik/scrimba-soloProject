@@ -3,20 +3,24 @@ let HomeResult = document.getElementById("HomeResult");
 let HomeScore = 0;
 let GuestResult = document.getElementById("GuestResult");
 let GuestScore = 0;
-let Stop = document.getElementsByClassName("stop");
 
-function StopGame() { //highlights a leader
-  if (HomeScore > GuestScore) {
-    HomeResult.style.color = "#25710e";
-    GuestResult.style.color = "#041014";
-  } else if (HomeScore < GuestScore) {
-    HomeResult.style.color = "#041014";
-    GuestResult.style.color = "#25710e";
+
+setInterval(function () {
+  let n1 = parseInt(HomeResult.textContent);
+  let n2 = parseInt(GuestResult.textContent);
+
+  if (n1 > n2) {
+    HomeResult.classList.add("highlight");
+    GuestResult.classList.remove("highlight");
+  } else if(n1 < n2){
+    HomeResult.classList.remove("highlight");
+    GuestResult.classList.add("highlight");
   }else{
-GuestResult.style.color = "#041014";
-HomeResult.style.color = "#041014";
+      HomeResult.classList.remove("highlight");
+        GuestResult.classList.remove("highlight");
   }
-}
+}, 1000);
+
 
 function homePlusOne() {
     HomeScore = HomeScore + 1;
